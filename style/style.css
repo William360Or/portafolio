@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --verde: #09BC56;
+    --blanco: #ffffff;
+    --blancoLetras: #ffffff8e;
+    --fondo: #14141E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: var(--fondo);
+    font-family: "Inter";
+    color: var(--blanco);
+}
+
+a{
+    text-decoration-line: none;
+    color: var(--blancoLetras);
+    
+}
+
+.logo{
+    font-size: 6em;
+    font-weight: 900;
+    color: var(--blanco);
+}
+
+.logo--span{
+    color: var(--verde);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 60px;
+
+
+}
+
+.menu-lista{
+    margin-left: 100px;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    color: var(--blancoLetras);
+    justify-content: space-around;
+    font-family: "Inter";
+    font-size: 1.5em;
+    font-weight: 600;
+    list-style: none;
+}
+
+.menu-lista a:hover{
+    color: var(--verde);
+}
+
+
+.menu_btndescarga{
+    background-color: var(--fondo);
+    color: var(--verde);
+    border: 2px solid var(--verde);
+    border-radius: 5px;
+    width: 250px;
+    height: 60px;
+    font-family: "Inter";
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu_btndescarga:hover{
+    background-color: var(--verde);
+    color: var(--blanco);
+    border: 2px solid var(--blanco);
+}
