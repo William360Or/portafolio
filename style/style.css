@@ -5,6 +5,7 @@
     --blanco: #ffffff;
     --blancoLetras: #ffffff8e;
     --fondo: #14141E;
+    --fondoTarjetas: #1C1B29;
 }
 
 *{
@@ -14,6 +15,9 @@
 }
 
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: var(--fondo);
@@ -83,4 +87,171 @@ a{
     background-color: var(--verde);
     color: var(--blanco);
     border: 2px solid var(--blanco);
+}
+
+.contenedor_secciones{
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.principal{
+    display: flex;
+    margin-left: 194px;
+    margin-top: 182px;
+    margin-bottom: 61px;
+}
+
+.principal_home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_titulo--h1{
+    font-size: 6em;
+    font-weight: 700;
+    margin-bottom: 61px;
+    letter-spacing: 20px;
+}
+
+.home_titulo--span{
+    color: var(--verde);
+}
+
+
+.home_parrafo--p{
+    font-size: 1.5em;
+    letter-spacing: 6px;
+    font-weight: 700;
+
+}
+
+.about{
+    padding-left: 500px;
+    padding-right: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;    
+}
+.about_titulo, .proyectos_titulo{
+    font-family: "Inter";
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.about_descripcion{
+    font-family: "Inter";
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 60px;
+    
+}
+
+.about_datos{
+    background-color: var(--fondoTarjetas);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:165px;
+    width: 864px;
+    height: 340px;
+    padding: 25px 91px;
+    border-radius: 10px;
+
+}
+
+.datos_contacto{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    justify-content: start;
+    align-items: start;
+    font-size: 1em;
+    font-weight: 700;
+    padding-top: 29px;
+}
+
+
+.datos_contacto img{
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: var(--blanco);
+    align-self: center;
+    margin-bottom: 24px;
+}
+
+.datos_contacto span{
+    color: var(--verde);
+}
+
+.datos_contacto button{
+    align-self: center;
+    margin-top: 34px;
+    cursor: pointer;
+    background-color: var(--fondoTarjetas);
+    border: 1px solid var(--verde);
+    width: 152px;
+    height: 43px;
+    color: var(--verde);
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-size: 1em;
+}
+
+.about_skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.skills_titulo{
+    font-size: 1.5em;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.skills_lista{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.25em;
+    font-weight: 400;
+
+}
+.skills_item::marker{
+    color: var(--verde);
+}
+
+
+/* estilos tarjetas de proyectos */
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.proyectos_tarjetas{
+    width: 880px;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:25px
+}
+
+.tarjetas_proyecto{
+    width: 276px;
+    height: 186px;
+    border-radius: 10px;
+    background-color: #ffffff;
 }
